@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript</h1>
+    <p id="demo"></p>
+    <script>
+        // const car = {
+        //     type: "fiat",
+        //     model : 480,
+        //     color: "white"
+        // }
+        // document.getElementById("demo").innerHTML = "the car type is "+ car.type;
+    //     const person = {
+    // firstName: "John",
+    // lastName: "Doe",
+    // age: 50,
+    // eyeColor: "blue"
+    // };
+
+    // // Display Data from the Object:
+    // document.getElementById("demo").innerHTML =
+    // const person = {}
+    // person.firstname = "muhammad";
+    // person.lastname = "hanzla";
+    // person.age = 20;
+    // person.color = "white";
+    // document.getElementById("demo").innerHTML = person.firstname + " is " + person.age + " years old.";
+    // methods
+
+    // const person = {
+    //     firstname : "hanzla",
+    //     lastname : "faiz",
+    //     hobby : "programming",
+    //     age : "20",
+    //     fullname : function(){
+    //         return (this.firstname + " " + this.lastname).toUpperCase();
+    //     }
+       
+    // }
+    // document.getElementById("demo").innerHTML = person.fullname()
+const person = {
+        firstname : "hanzla",
+        lastname : "faiz",
+        hobby : "programming",
+        age : "20",
+}
+let fullintro = ""
+for(x in person){
+    fullintro += person[x]+" ";
+}
+document.getElementById("demo").innerHTML = fullintro
+    
+    </script>
+</body>
+</html>
