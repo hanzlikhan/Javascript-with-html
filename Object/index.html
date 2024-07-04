@@ -66,9 +66,24 @@ function person(name , age , profession, religion) {
     this.religion = religion
 }
 
-person1 = new person("hanzla",22,"student","islam");
-person2 = new person("irfan", 23, "doctor", "islam")
+const person1 = new person("hanzla",22,"student","islam");
+const person2 = new person("irfan", 23, "doctor", "islam")
 document.getElementById("demo").innerHTML = person1.name + " and " + person2.name + " are friends have different " + person1.profession + " and " + person2.profession;
+
+// function Person(first, last, age, eye) {
+//   this.firstName = first;
+//   this.lastName = last;
+//   this.age = age;
+//   this.eyeColor = eye;
+// }
+
+// // Create two Person objects
+// const myFather = new Person("John", "Doe", 50, "blue");
+// const myMother = new Person("Sally", "Rally", 48, "green");
+
+// // Display age
+// document.getElementById("demo").innerHTML =
+// "My father is " + myFather.age + ". My mother is " + myMother.age + "."; 
 
     </script>
 </body>

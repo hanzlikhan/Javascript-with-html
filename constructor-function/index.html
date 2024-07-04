@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript</h1>
+    <p id="demo"></p>
+    <script>
+        function person(name,lastname,age,gender) {
+            this.name = name; 
+            this.lastname = lastname
+            this.age = age; 
+            this.gender = gender;            
+        }
+        // let person1 = new person("hanlza",22,"male");
+        // let person2 = new person("nimi", 23, "female");
+        // document.getElementById("demo").innerHTML = "my name is " + person1.name + " and the age is " + person1.age + ".";
+        
+        person.prototype.changeName = function(name){
+            return this.lastname = name 
+        }
+        person1 = new person("hanzla","faiz Muhammad",22,"male");
+        person1.changeName("Faiz");
+        document.getElementById("demo").innerHTML = person1.lastname;
+    </script>
+</body>
+</html>
