@@ -49,12 +49,27 @@ const person = {
         hobby : "programming",
         age : "20",
 }
-let fullintro = ""
-for(x in person){
-    fullintro += person[x]+" ";
+// let fullintro = ""
+//     for(let [key,values] of Object.entries(person) ){
+//     fullintro += key + ":"+ values 
+//     }
+
+// // document.getElementById("demo").innerHTML = fullintro
+
+// document.getElementById("demo").innerHTML = JSON.stringify(person)
+
+// construcor function
+function person(name , age , profession, religion) {
+    this.name = name
+    this.age = age
+    this.profession = profession
+    this.religion = religion
 }
-document.getElementById("demo").innerHTML = fullintro
-    
+
+person1 = new person("hanzla",22,"student","islam");
+person2 = new person("irfan", 23, "doctor", "islam")
+document.getElementById("demo").innerHTML = person1.name + " and " + person2.name + " are friends have different " + person1.profession + " and " + person2.profession;
+
     </script>
 </body>
 </html>
